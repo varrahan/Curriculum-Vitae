@@ -1,0 +1,230 @@
+%-------------------------
+% Academic Curriculum Vitae
+% Author: Varrahan Uthayan
+% License: MIT
+%------------------------
+
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\fancyhead{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-8pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\cvItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\cvSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\cvProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \small#2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\cvSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\cvSubHeadingListEnd}{\end{itemize}}
+\newcommand{\cvItemListStart}{\begin{itemize}}
+\newcommand{\cvItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\huge \scshape Varrahan Uthayan} \\
+    \vspace{4pt}
+    647-283-2215 $\cdot$ \href{mailto:varrahan@gmail.com}{varrahan@gmail.com} \\
+    \href{https://www.linkedin.com/in/varrahan-uthayan-578941291/}{linkedin.com/in/varrahan} $\cdot$
+    \href{https://github.com/varrahan}{github.com/varrahan} $\cdot$
+    \href{https://varrahan.vercel.app/}{varrahan.vercel.app}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \cvSubHeadingListStart
+    \cvSubheading
+      {Bachelor of Engineering, Computer Systems Engineering}{Sept. 2021 -- May 2026 (Expected)}
+      {Carleton University}{Ottawa, Ontario}
+      \cvItemListStart
+        \cvItem{GPA: 10.66/12.0}
+        \cvItem{Relevant Coursework: Data Structures and Algorithms, Operating Systems, Distributed Systems, Computer Architecture, Cybersecurity, Networking, Object-Oriented Programming, FPGA Design, Statistics, Mathematics}
+      \cvItemListEnd
+  \cvSubHeadingListEnd
+
+%-----------HONOURS AND AWARDS-----------
+\section{Honours and Awards}
+  \cvSubHeadingListStart
+    \cvItem{Dean's List, Carleton University (All Terms)}
+    \cvItem{Carleton Academic Scholarship, Carleton University}
+    \cvItem{Golden Key Honour Society Award, Carleton University}
+  \cvSubHeadingListEnd
+
+%-----------PROFESSIONAL EXPERIENCE-----------
+\section{Professional Experience}
+  \cvSubHeadingListStart
+
+    \cvSubheading
+      {Software Developer Intern}{May 2025 -- August 2025}
+      {Markitech}{Toronto, Ontario}
+      \cvItemListStart
+        \cvItem{Implemented a Retrieval-Augmented Generation (RAG) model using Python, LangChain, and OpenAI APIs to assist therapists and pediatricians in identifying potential mental health concerns}
+        \cvItem{Developed a full-stack web application with React.js, Node.js, Express, and MongoDB for Deloitte and Telus Health, enabling provider call tracking and appointment scheduling}
+        \cvItem{Redesigned the Cliniscripts SaaS product UX/UI in an Agile/Scrum environment, improving customer subscription retention by 15\%}
+      \cvItemListEnd
+
+    \cvSubheading
+      {Full-stack Web Developer Intern}{May 2024 -- December 2024}
+      {Ingram Micro}{Toronto, Ontario}
+      \cvItemListStart
+        \cvItem{Designed and deployed backend REST API microservices with Python, FastAPI, and Docker to automate Azure App Insights metric reporting into Confluence, reducing manual reporting time by 100\%}
+        \cvItem{Built a Vue.js + Python admin portal integrated with PostgreSQL to centralize Atlassian tools, lowering license costs by 20\% across the organization}
+        \cvItem{Created and automated 8+ ServiceNow workflows using JavaScript for compliance and service processes, streamlining ITSM operations}
+      \cvItemListEnd
+
+    \cvSubheading
+      {Embedded Software Engineering Intern}{January 2024 -- April 2024}
+      {Best Theratronics}{Ottawa, Ontario}
+      \cvItemListStart
+        \cvItem{Trained and deployed a machine-learning CNN model (98\% precision) using PyTorch on a Raspberry Pi 4 for real-time MRI brain tumour classification in Gamma therapy}
+        \cvItem{Programmed multicore C++ applications for Arm Cortex-M0 microcontrollers to log particle accelerator metrics, implementing a safety shutdown routine to protect hardware}
+        \cvItem{Built a machine learning defect detection system with OpenCV (93\% accuracy) for irradiator fault monitoring}
+      \cvItemListEnd
+
+    \cvSubheading
+      {Data Engineering Intern}{May 2023 -- August 2023}
+      {RoundAssist}{Toronto, Ontario}
+      \cvItemListStart
+        \cvItem{Designed ETL pipelines in Python to extract, transform, and load data from SQL databases into Tableau, reducing manual entry by 60\%}
+        \cvItem{Built 5+ interactive dashboards using Tableau and SQL, improving client reporting, analytics, and reducing data fragmentation}
+      \cvItemListEnd
+
+  \cvSubHeadingListEnd
+
+%-----------RESEARCH EXPERIENCE-----------
+\section{Research Experience}
+  \cvSubHeadingListStart
+    \cvSubheading
+        {Research Project -- CNN-LSTM Sleep Apnea Detector}{2025}
+        {Supervisors: Dr. Sreeraman Rajan (Carleton University) and Dr. Miodrag Bolić (UOttawa)}{Ottawa, Ontario}
+        \cvItemListStart
+          \cvItem{Designed and deployed a real-time, distributed edge AI system** for sleep apnea detection, collecting concurrent Photoplethysmography (PPG) and BioZ data from two distinct wearable sensors.}
+          \cvItem{Architected a data pipeline on a Raspberry Pi 5 using a Cypress CYSMART CY5677 BLE Dongle to interface with the Analog Devices MAXREF104 Watch (PPG) and MAXREF106 Patch (PPG/BioZ).}
+          \cvItem{Developed and trained a novel Hybrid CNN-LSTM model to process multi-modal, time-series biosignals}
+          \cvItem{Implemented on-device inference using optimized TensorFlow Lite to enable low-latency detection at the edge, crucial for clinical monitoring applications.}
+        \cvItemListEnd
+      
+    \cvSubheading
+      {Open Source Contributor -- DNS Anomaly Detector}{2025}
+      {Independent Project}{Remote}
+      \cvItemListStart
+        \cvItem{Designed and implemented a research-grade DNS anomaly detection system to analyze live DNS traffic and identify malicious behaviours such as DNS tunnelling, DGA-generated domains, NXDOMAIN surges, and DNS amplification attempts}
+        \cvItem{Conducted empirical analysis on captured DNS traffic to benchmark detection performance, assess false-positive behaviour, and evaluate the effectiveness of lightweight statistical methods versus ML-based approaches}
+        \cvItem{Trained and evaluated a supervised machine-learning classifier with scikit-learn using public DGA datasets, improving detection accuracy for algorithmically generated domains through feature engineering and cross-validation}
+      \cvItemListEnd
+      
+    \cvSubheading
+    {Research Project -- Braille Buddy IoT System}{2024}
+    {Supervisor: Dr. Abdullah Kadri (Carleton University)}{Ottawa, Ontario}
+    \cvItemListStart
+      \cvItem{Designed and implemented a distributed, multi-board IoT system using 5 Raspberry Pi boards to manage Scanner, Braille Output, Web Server, and Database components.}
+      \cvItem{Developed a microservices architecture ensuring **real-time operation** and seamless, asynchronous integration between distributed components.}
+      \cvItem{Programmed low-level GPIO interfaces for physical Braille output control and constructed a web dashboard for comprehensive system monitoring and user interaction.}
+    \cvItemListEnd
+  \cvSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}: Python, TypeScript, JavaScript, C, C++, Go, HTML, CSS, Java \\
+     \textbf{Frameworks \& Libraries}: Node.js, React.js, Angular.js, Vue.js, FastAPI, PyTorch, TensorFlow, Flask, Django, LangChain, LangGraph, OpenCV \\
+     \textbf{Cloud \& DevOps}: Docker, Kubernetes, Git/GitHub, AWS, GCP, Azure, CI/CD pipelines \\
+     \textbf{Databases}: PostgreSQL, MongoDB, MySQL, NoSQL, InfluxDB \\
+     \textbf{Tools \& Technologies}: Linux, Apache Kafka, Jira, Tableau, ServiceNow, FPGA, Raspberry Pi, ARM Cortex-M, Vivado, Vitis, Modelsim, Arduino
+    }}
+ \end{itemize}
+
+%-----------PROFESSIONAL DEVELOPMENT-----------
+\section{Professional Development}
+  \cvSubHeadingListStart
+    \cvItem{Agile/Scrum Development Methodologies (Applied in professional internships)}
+    \cvItem{Cloud Architecture and Microservices Design (AWS, GCP, Azure platforms)}
+    \cvItem{Machine Learning and AI Model Deployment (PyTorch, TensorFlow)}
+    \cvItem{DevOps and Container Orchestration (Docker, Kubernetes)}
+  \cvSubHeadingListEnd
+
+%-----------LANGUAGES-----------
+\section{Languages}
+  \cvSubHeadingListStart
+    \cvItem{English (Native proficiency)}
+  \cvSubHeadingListEnd
+
+%-----------INTERESTS & ACTIVITIES-----------
+\section{Professional Interests}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     Distributed Systems $\cdot$ Cloud Native Technologies $\cdot$ Machine Learning Applications $\cdot$ 
+     Healthcare Technology $\cdot$ Open Source Contribution $\cdot$ System Architecture $\cdot$ 
+     Embedded AI $\cdot$ DevOps Automation
+    }}
+ \end{itemize}
+
+%----------REFERENCES----------
+\section{References}
+\begin{center}
+    Available upon request
+\end{center}
+\end{document}
